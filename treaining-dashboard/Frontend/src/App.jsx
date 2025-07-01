@@ -29,8 +29,8 @@ const App = () => {
       <ToastContainer />
       <Router>
         <Navbar />
-
-        
+  
+          <Routes>
           {/* Public */}
           <Route path="/" element={<LoginPage />} />
           {/* <Route path="/login" element={<LoginPage />} /> */}
@@ -38,6 +38,7 @@ const App = () => {
           <Route path="/forgot-password" element={<ForgotPasswordPage />} />
           <Route path="/reset-password" element={<ResetPasswordPage />} />
 
+            </Routes>
         <div className="main-content">
           
         <Routes>
