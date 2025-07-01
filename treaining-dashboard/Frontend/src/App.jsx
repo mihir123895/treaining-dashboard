@@ -19,6 +19,7 @@ import AllProgressPage from "./pages/instructor/AllProgressPage";
 import TraineeDashboard from "./pages/trainee/TraineeDashboard";
 import MyModulesPage from "./pages/trainee/MyModulesPage";
 import MobileNav from "./components/MobileNav";
+import NotFoundPage from "./pages/NotFoundPage";
 
 
 
@@ -32,6 +33,8 @@ const App = () => {
         <div className="main-content">
           
         <Routes>
+          <Route path="*" element={<NotFoundPage />} />
+
           {/* Public */}
           <Route path="/" element={<LoginPage />} />
           <Route path="/login" element={<LoginPage />} />

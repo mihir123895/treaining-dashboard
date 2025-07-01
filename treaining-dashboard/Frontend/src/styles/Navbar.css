@@ -10,6 +10,11 @@
   width: 100vw;
 }
 
+.Logo {
+  color: black;
+
+}
+
 .nav-left h2 {
   margin: 0;
   color: white;
@@ -36,6 +41,18 @@
   font-size: 0.95rem;
 }
 
+.nav-right a,
+.nav-left a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+.nav-right a:hover,
+.nav-left a:hover {
+  color: #d1e8ff;
+  transform: translateY(-1px);
+}
 .nav-right button {
   background: white;
   color: #007bff;
@@ -43,14 +60,13 @@
   padding: 8px 12px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background 0.2s;
-      margin-right: 40px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-right: 40px;
 }
-
 .nav-right button:hover {
   background: #e6e6e6;
+  transform: scale(1.03);
 }
-
 
 /* Show only on mobile screens */
 @media screen and (max-width: 600px) {

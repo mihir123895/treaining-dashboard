@@ -1,3 +1,4 @@
+/* Mobile Nav Base */
 .mobile-nav {
   position: fixed;
   bottom: 0;
@@ -19,11 +20,23 @@
   flex-direction: column;
   align-items: center;
   font-size: 12px;
+  transition: color 0.3s ease;
 }
 
 .mobile-nav .icon {
   font-size: 1.6rem;
   color: white;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+/* Hover Effects */
+.mobile-nav a:hover .icon {
+  transform: scale(1.1);
+  color: #d1e8ff;
+}
+
+.mobile-nav a:hover {
+  color: #d1e8ff;
 }
 
 /* Show only on mobile screens */

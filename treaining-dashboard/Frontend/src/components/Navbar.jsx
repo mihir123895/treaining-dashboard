@@ -24,7 +24,7 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="nav-left">
           <Link to={user?.role === "instructor" ? "/instructor/dashboard" : "/trainee/dashboard"}>
-            <h2>Training Tracker</h2>
+            <h2>Training  <span className="Logo">Tracker</span></h2>
           </Link>
         </div>
 
