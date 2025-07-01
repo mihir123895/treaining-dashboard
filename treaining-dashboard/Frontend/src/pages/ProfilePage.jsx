@@ -21,8 +21,6 @@ const ProfilePage = () => {
       const { username, gender, dob, phone } = res.data;
       setForm({ username, gender, dob, phone });
       setLoading(false);
-      // console.log("User info:", res.data);
-
     };
 
     fetchProfile();
@@ -50,15 +48,31 @@ const ProfilePage = () => {
     <div className="profile-container">
       <h2>Edit Profile</h2>
       <form className="profile-form" onSubmit={handleSubmit}>
-        <input name="username" value={form.username} onChange={handleChange} required />
-        <input name="dob" type="date" value={form.dob} onChange={handleChange} />
-        <input name="phone" value={form.phone} onChange={handleChange} />
-        <select name="gender" value={form.gender} onChange={handleChange}>
-          <option>Not Selected</option>
-          <option>Male</option>
-          <option>Female</option>
-          <option>Other</option>
-        </select>
+        <div className="form-group">
+          <label htmlFor="username">Username</label>
+          <input id="username" name="username" value={form.username} onChange={handleChange} required />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="dob">Date of Birth</label>
+          <input id="dob" name="dob" type="date" value={form.dob} onChange={handleChange} />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="phone">Phone Number</label>
+          <input id="phone" name="phone" value={form.phone} onChange={handleChange} />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="gender">Gender</label>
+          <select id="gender" name="gender" value={form.gender} onChange={handleChange}>
+            <option>Not Selected</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+
         <button type="submit">Save Changes</button>
       </form>
     </div>
