@@ -33,8 +33,9 @@ export const registerUser = async (req, res) => {
       // ✅ Set token in cookie
       res.cookie("token", token, {
         httpOnly: true,
-        maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
-        sameSite: "Lax",
+  secure: true,            // ✅ IMPORTANT on Vercel (HTTPS)
+  sameSite: "None",        // ✅ REQUIRED for cross-site cookies
+  maxAge: 24 * 60 * 60 * 1000, // optional: 1 day
       });
   
       // ✅ Send response
@@ -73,9 +74,10 @@ export const loginUser = async (req, res) => {
 
     // 🛠️ Set the cookie first, then send one response
    res.cookie("token", token, {
-  httpOnly: true,
-  sameSite: "Lax", // ✅ Good for same-origin or localhost
-  maxAge: 7 * 24 * 60 * 60 * 1000,
+ httpOnly: true,
+  secure: true,            // ✅ IMPORTANT on Vercel (HTTPS)
+  sameSite: "None",        // ✅ REQUIRED for cross-site cookies
+  maxAge: 24 * 60 * 60 * 1000, // optional: 1 day
 })
       .status(200)
       .json({ token, user, message: "Login successful" }); // <-- Include token here if needed on frontend
