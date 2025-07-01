@@ -1,0 +1,56 @@
+.module-card {
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.module-card.completed {
+  background-color: #e1fbe3;
+  border-left: 4px solid #28a745;
+}
+
+.module-card h4 {
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.module-card p {
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.module-card button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.module-card button:hover {
+  background: #0056b3;
+}
+
+.done-label {
+  font-weight: bold;
+  color: #28a745;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-top: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}

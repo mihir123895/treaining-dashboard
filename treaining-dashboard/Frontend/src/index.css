@@ -1,0 +1,5 @@
+@media screen and (max-width: 600px) {
+  .main-content {
+    padding-bottom: 80px; /* slightly more than .mobile-nav height */
+  }
+}

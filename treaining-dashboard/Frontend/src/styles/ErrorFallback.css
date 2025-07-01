@@ -1,0 +1,24 @@
+.error-fallback {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.error-fallback h3 {
+  color: #dc3545;
+  margin-bottom: 20px;
+}
+
+.error-fallback button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.error-fallback button:hover {
+  background-color: #0056b3;
+}
