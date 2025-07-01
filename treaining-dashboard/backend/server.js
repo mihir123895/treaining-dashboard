@@ -10,7 +10,7 @@ import moduleRoutes from "./routes/modules.js"
 dotenv.config();
 const app = express();
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "https://treaining-dashboard-v9dk.vercel.app",
   credentials: true,
 }));
 app.use(express.json());
