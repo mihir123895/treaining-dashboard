@@ -49,22 +49,22 @@ const ProfilePage = () => {
       <h2>Edit Profile</h2>
       <form className="profile-form" onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="username">Username</label>
+          <label htmlFor="username">Username:-</label>
           <input id="username" name="username" value={form.username} onChange={handleChange} required />
         </div>
 
         <div className="form-group">
-          <label htmlFor="dob">Date of Birth</label>
+          <label htmlFor="dob">Date of Birth:-</label>
           <input id="dob" name="dob" type="date" value={form.dob} onChange={handleChange} />
         </div>
 
         <div className="form-group">
-          <label htmlFor="phone">Phone Number</label>
+          <label htmlFor="phone">Phone Number:-</label>
           <input id="phone" name="phone" value={form.phone} onChange={handleChange} />
         </div>
 
         <div className="form-group">
-          <label htmlFor="gender">Gender</label>
+          <label htmlFor="gender">Gender:-</label>
           <select id="gender" name="gender" value={form.gender} onChange={handleChange}>
             <option>Not Selected</option>
             <option>Male</option>
