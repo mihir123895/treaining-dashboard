@@ -10,6 +10,13 @@
   gap: 1rem;
 }
 
+/* Add this for better label appearance */
+.profile-form label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
 .profile-form input,
 .profile-form select {
   padding: 12px;
