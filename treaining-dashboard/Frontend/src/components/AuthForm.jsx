@@ -78,7 +78,7 @@ const AuthForm = ({ type = "login", onSubmit }) => {
 
           {type === "register" && (
             <p>
-              Already have an account? <Link to="/login">Login</Link>
+              Already have an account? <Link to="/">Login</Link>
             </p>
           )}
         </div>

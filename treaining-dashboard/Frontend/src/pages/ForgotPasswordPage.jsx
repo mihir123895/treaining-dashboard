@@ -39,7 +39,7 @@ const ForgotPasswordPage = () => {
         />
         <button type="submit">Send OTP</button>
         {message && <p style={{ marginTop: "1rem" }}>{message}</p>}
-        <p><a href="/login">Return to login page</a></p>
+        <p><a href="/">Return to login page</a></p>
       </form>
     </div>
   );
