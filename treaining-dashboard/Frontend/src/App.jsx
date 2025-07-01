@@ -30,20 +30,20 @@ const App = () => {
       <Router>
         <Navbar />
   
-          <Routes>
+          
+          
+          
+        <div className="main-content">
+          
+        <Routes>
+          <Route path="*" element={<NotFoundPage />} />
+
           {/* Public */}
           <Route path="/" element={<LoginPage />} />
           {/* <Route path="/login" element={<LoginPage />} /> */}
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/forgot-password" element={<ForgotPasswordPage />} />
           <Route path="/reset-password" element={<ResetPasswordPage />} />
-
-            </Routes>
-        <div className="main-content">
-          
-        <Routes>
-          <Route path="*" element={<NotFoundPage />} />
-
 
           {/* Shared */}
           <Route
